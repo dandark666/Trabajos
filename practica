@@ -1,0 +1,34 @@
+% De secuencia de comandos de octava
+% Título: Funcion constante
+% Descripción: Script para graficar una funcion de la forma f (x) = a   
+% Autor: Ing. Horacio Rosales Velasco (lacho_t) ciberlinux2@gmail.com
+% Fecha: 20210401
+% sion: 1
+% De uso: octava> / ruta / f_constante
+% Notas: Requiere aplicacion octava usar en consola preferiblemente
+
+%       f (x) = a
+% si se graficá su comportamiento es lineal
+%       ^
+%     y |
+%       |   
+%       | ____________
+%       |
+%       | _____________> x
+%
+
+% limpiar variables
+ claro
+% Ejemplo f (x) = a
+% Rango de -10..10 en i = 1
+x = - 10 : 1 : 10 ;
+% Valor de la función
+y = 0,45 ;
+% Dibujar x, y
+ plot (x, y);
+% Titulo
+título ( " f (x) = a " );
+% Etiqueta para x
+xlabel ( " x " );
+% Etiqueta para y
+ylabel ( " f (x) " );
